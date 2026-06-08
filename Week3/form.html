@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackline Supply - Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <div class="form-container">
+        <h2>Blackline Supply</h2>
+        <h3 style="text-align:center; color:#3498DB;">Create Account</h3>
+
+        <input type="text" id="username" placeholder="Username" onkeyup="validateUsername()">
+        <p class="error" id="usernameError"></p>
+
+        <input type="email" id="email" placeholder="Email Address" onkeyup="validateEmail()">
+        <p class="error" id="emailError"></p>
+
+        <input type="password" id="password" placeholder="Password" onkeyup="checkPassword()">
+        <p class="strength" id="passwordStrength"></p>
+
+        <button onclick="submitForm()">Register</button>
+        <p class="error" id="formError"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

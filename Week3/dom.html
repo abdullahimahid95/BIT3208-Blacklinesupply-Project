@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackline Supply - DOM Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <div class="container">
+        <h2>Blackline Supply</h2>
+        <h3 style="color:#3498DB;">DOM Manipulation</h3>
+
+        <ul id="productList">
+            <li id="item1">Product X — Ksh 400</li>
+            <li id="item2">Product Y — Ksh 6000</li>
+            <li id="item3">Product Z — Ksh 1400</li>
+        </ul>
+
+        <button class="btn-add" onclick="addProduct()">Add Product</button>
+        <button class="btn-change" onclick="changeProduct()">Update First Item</button>
+        <button class="btn-remove" onclick="removeProduct()">Remove Last Item</button>
+
+        <p id="message"></p>
+    </div>
+    <script src="js/dom.js"></script>
+</body>
+</html>
